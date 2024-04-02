@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+												<!-- default scope is scope="singleton" -->
+   <bean id="student" class="com.ktga.spring.student" scope="prototype" autowire="byType">
+   	<!-- <property name="id1" value="30"></property> -->
+   	<!-- <property name="id" ref="teacherId"></property> -->
+   	<!-- <constructor-arg value="30"></constructor-arg> -->
+   </bean>
+   
+   <bean id="studentId" class="com.ktga.spring.studentId" primary="true">
+   
+   </bean>	
+   
+   <bean id="teacherId" class="com.ktga.spring.teacherId">
+   
+   </bean>
+										
+</beans>
